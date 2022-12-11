@@ -6,6 +6,7 @@ const Form = () => {
     const [country, setCountry] = useState('');
     const [street, setStreet] = useState('');
     const [subject, setSubject] = useState('physical');
+    const {tg} = useTelegram();
 
     useEffect(() => {
         tg.MainButton.setParams({
@@ -20,7 +21,6 @@ const Form = () => {
             tg.MainButton.show();
         }
     }, [country, street])
-
 
     const onChangeCountry = (e) => {
         setCountry(e.target.value)
