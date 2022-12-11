@@ -23,7 +23,7 @@ const Form = () => {
             tg.offEvent('mainButtonClicked', onSendData)
         }
     }, [onSendData])
-    
+
     useEffect(() => {
         tg.MainButton.setParams({
             text: 'Отправить данные'
@@ -63,7 +63,7 @@ const Form = () => {
             <input
                 className={'input'}
                 type="text"
-                placeholder={'Улица'}
+                placeholder={'Цель'}
                 value={street}
                 onChange={onChangeStreet}
             />
