@@ -6,7 +6,7 @@ import {useCallback, useEffect} from "react";
 
 const products = [
     {id: '1', title: 'Консультация', price: 100, description: 'Наш специалист проконсультирует вас по всем вопросам'},
-    {id: '2', title: 'Заказ WEV-APP', price: 1000, description: 'Сделаем удобное приложение для вашего бизнеса'},
+    {id: '2', title: 'Заказ WEB-APP', price: 1000, description: 'Сделаем удобное приложение для вашего бизнеса'},
     {id: '3', title: 'Сотрудничество', price: 300, description: 'Реклама, бартер и другое'},
 
 ]
