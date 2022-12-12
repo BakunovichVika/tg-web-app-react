@@ -5,9 +5,9 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
 const products = [
-    {id: '1', title: 'Консультация', price: 100, description: 'Наш специалист проконсультирует вас по всем вопросам'},
-    {id: '2', title: 'Заказ WEB-APP', price: 1000, description: 'Сделаем удобное приложение для вашего бизнеса'},
-    {id: '3', title: 'Сотрудничество', price: 300, description: 'Реклама, бартер и другое'},
+    {id: '1', title: 'Concultation', price: 100, description: 'Our spicialist will advise you on all questions'},
+    {id: '2', title: 'Order WEB-APP', price: 1000, description: 'We will make a convinient APP for your business'},
+    {id: '3', title: 'Cooperation', price: 300, description: 'Advertising, barter and other'},
 
 ]
 
@@ -61,7 +61,7 @@ const ProductList = () => {
         } else {
             tg.MainButton.show();
             tg.MainButton.setParams({
-                text: `Заказать ${getTotalPrice(newItems)}`
+                text: `Order ${getTotalPrice(newItems)}`
             })
         }
     }
